@@ -114,7 +114,7 @@ export default class Squelify {
     )
   }
 
-  async _request<T>(path: string, options?: RequestInit) {
+  async _request<T>(path: string, options?: RequestInit): Promise<T> {
     const headers: HeadersInit = new Headers(options?.headers)
 
     // Set default request headers

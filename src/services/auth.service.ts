@@ -8,7 +8,7 @@ interface LoginResponse {
 class AuthService {
   constructor(private apiClient: Squelify) {}
 
-  login(email: string, password: string) {
+  login(email: string, password: string): Promise<ApiResponse<LoginResponse>> {
     return this.apiClient._request<ApiResponse<LoginResponse>>('/auth/login', {
       method: 'POST',
       body: JSON.stringify({ email, password }),
