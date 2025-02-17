@@ -22,11 +22,9 @@ pnpm install @squelify/client
 ```ts
 import Squelify from "@squelify/client";
 
-// Instantiate the Squelify auth client with an optional configuration
-const auth = new Squelify({
-    apiUrl: "https://<your_squelify_domain_name>",
-    audience: "my-web-app",
-    setCookie: false,
+// Instantiate the Squelify client with an optional configuration
+const sq = new Squelify({
+  apiUrl: "https://<your_squelify_domain_name>"
 });
 ```
 

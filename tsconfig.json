@@ -1,0 +1,27 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "compilerOptions": {
+        "declaration": true,
+        "declarationMap": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "inlineSources": false,
+        "isolatedModules": true,
+        "module": "ESNext",
+        "moduleDetection": "auto",
+        "moduleResolution": "Bundler",
+        "noEmit": true,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "outDir": "dist",
+        "preserveWatchOutput": true,
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "sourceRoot": "src",
+        "strict": true,
+        "verbatimModuleSyntax": true
+    },
+    "include": ["src"],
+    "exclude": ["dist", "node_modules"]
+}
